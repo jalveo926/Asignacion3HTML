@@ -4,28 +4,33 @@
     <title>Contáctanos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Vinculo el archivo con los estilos de este html específico-->
     <link rel="stylesheet" href="estilos/contacto.css">
 </head>
 <body>
     <header>
         <div class="tituloh1">
-            <h1><a href="HOME.html">Salud Vital</a></h1>
+            <b><h1><a href="HOME.html">Salud Vital</a></h1></b>
             <hr>
         </div>
         
-        
+        <!--Menú de navegación con las opciones de HTML-->
         <nav class = "navMenu">
+            <b>
             <ul class="listaMenu">
                 <li><a href="REGISTRO.html"><h3>Registrarse</h3></a></li>
                 <li><a href="BLOG.html"><h3>Ver Blog</h3></a></li>
                 <li><a href="HOME.html"><h3>Volver a home</h3></a> </li>
             </ul>
+            </b>
         </nav>
         <hr>
     </header>
     <main>
+        <!--Aquí inician las secciones de los estudiantes para que cada uno tenga su información-->
         <section class="integranteInfo">
             <img src="Imagenes/Alveo.jpg" alt="Foto de alveo">
+            <!--Este div nos ayuda a dividr la sección en 2 hacer que la información esté a la derecha de imagen-->
             <div class="infoDerecha">
                 <p>Soy Jesús Alveo, tengo 20 años, me gusta la programación, el anime,videojuegos,gimnasio y voleyball.</p>
                     <ul>
@@ -63,7 +68,7 @@
                 </ul>
             </div>
            
-        </section>
+        </section> 
         <section class="integranteInfo">
             <img src="Imagenes/Erick.jpeg" alt="Foto de Erick">
             <div class="infoDerecha">
@@ -81,16 +86,20 @@
     <hr>
     <footer>
         <ul>
-            <li><a href="">Preguntas frecuentes</a></li>
-            <li><a href="">privacidad</a></li>
-            <li><a href="">Conoce más de nosotros</a></li>
-            <li>
+            <b> <!--La lista de opciones disponibles en el footer de la página-->
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">privacidad</a></li>
+                <li><a href="">Conoce más de nosotros</a></li>
+                <li>
+                <!--El label se vincula con el ID al objeto para que salga con el, para el DROPDOWN de los idiomas-->
                 <label for="opciones">Idioma</label>
                 <select id="opciones">
                     <option value="Esp" selected>Español</option>
                     <option value="Ing">Inglés</option>
                 </select>
             </li>
+            </b>
+           
         </ul>
         <p>Por Jesús Alveo, Jessica Zheng, Erick Hou, Roniel Quintero</p>
         <p> 2025</p>
