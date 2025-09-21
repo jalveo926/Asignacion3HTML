@@ -3,28 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/home.css">
     <title>Salud Vital</title>
 </head>
 <body>
 
+    <!--Header con el título principal y menú de navegación-->
     <header>
-        <h1>Salud Vital</h1>
-
+        <div class="tituloh1">
+            <h1>Salud Vital</h1>
+            <hr>
+        </div>
+        <!--Menú de navegación-->
+        <nav class="navMenu">
+            <!--Lista con las opciones que se pueden navegar-->
+            <ul class="listaMenu">
+                <li><a href="HOME.html"><b>HOME</b></a></li>
+                <li><a href="BLOG.html"><b>BLOG</b></a></li>
+                <li><a href="REGISTRO.html"><b>REGISTRO</b></a></li>
+                <li><a href="CONTACTO.html"><b>CONTÁCTANOS</b></a></li>
+            </ul>
+        </nav>
+        <hr>
     </header>
 
-    <nav>
-        <a href="HOME.html"><b>HOME</b></a>
-        <a href="BLOG.html"><b>BLOG</b></a>
-        <a href="REGISTRO.html"><b>REGISTRO</b></a>
-        <a href="CONTACTO.html"><b>CONTÁCTANOS</b></a>
-    </nav>
-    
-    <section>
+    <!--Se crea un main con el contenido principal de la página, los cuales están separados en sections distintos para mantener el orden.-->
+    <main>
+        <!--Sección para el Blog de noticias, que incluye una lista relacionada con salud y alimentación-->
+        <section class="noticia">
+            <div class="infoDerecha">
+                <h2>Blog de Noticias</h2>
+            <ul>
+                <li>Alimentación balanceada</li>
+                <li>Beneficios de frutas y verduras</li>
+                <li>Ejercicio y metabolismo</li>
+                <li>Suplementos nutricionales</li>
+                <li>Hidratación y salud</li>
+            </ul>
+            </div>
+        </section>    
 
-    </section>
-    
+        <!--Sección para la primera noticia-->
+        <section class="noticia">
+            <div class="infoDerecha">
+                <!--Título de la noticia-->
+                <h2>¿Cuánto azúcar es bueno consumir?</h2>
+                <!--Imagen de la noticia-->
+                <img src="Imagenes/noticia1.jpg" alt="Cuchara con azúcar">
+                <!--Resumen de la noticia-->
+                <p>El artículo de El País, basado en el libro El efecto glucosa de Diana Díaz Rizzolo, afirma que lo ideal para la salud es consumir 0 gramos de azúcar añadido al día, ya que incluso pequeñas cantidades pueden acumularse rápidamente y superar los límites recomendados por organismos como la OMS o la Asociación Americana del Corazón. Aunque no se consuma azúcar directamente, muchos alimentos comunes contienen azúcares ocultos, incluso productos considerados saludables como yogures, panes o zumos. La autora enfatiza la importancia de leer etiquetas y ser conscientes del consumo diario, ya que un menú aparentemente equilibrado puede llegar a cuadruplicar los límites saludables sin que nos demos cuenta.</p>
+                <!--Botón de "Ver más" con enlace a la noticia original-->
+                <a href="https://elpais.com/salud-y-bienestar/2025-09-17/cuanto-azucar-es-bueno-consumir-respuesta-tajante-0-gramos.html" target="_blank">
+                    <button>Ver más</button>
+                </a>
+            </div>
+        </section>
+         
+        <!--Sección para la segunda noticia-->
+        <section class="noticia">
+            <div class="infoDerecha">
+                <!--Título de la noticia-->
+                <h2>En el trópico panameño abundan las frutas, no así su consumo</h2>
+                <!--Imagen de la noticia-->
+                <img src="Imagenes/noticia2.jpg" alt="Pomarrosa">
+                <!--Resumen de la noticia-->
+                <p>Aunque Panamá es un país tropical con muchas frutas disponibles durante todo el año, la población consume menos de lo recomendado por la Organización Mundial de la Salud (OMS). Mientras que la OMS sugiere un consumo de al menos 400 gramos de frutas diarias para adultos, los panameños ingieren en promedio unos 175 gramos al día. Las frutas más consumidas son el plátano (“guineo”) y la naranja, mientras que variedades como el mamey, la acerola, el jobo o la pomarrosa son poco conocidas o utilizadas.</p>
+                <p>El artículo también señala que no hay un plan nacional fuerte que promueva tanto la producción como el consumo de frutas, y que muchas se pierden en el campo. Las autoridades de salud insisten en que, aprovechar la variedad local de frutas es importante por los beneficios nutricionales: vitaminas, minerales, fibra, antioxidantes y protección frente a enfermedades como las cardiovasculares, el cáncer y la diabetes.</p>
+                <!--Botón de "Ver más" con enlace a la noticia original-->
+                <a href="https://www.tvn-2.com/contenido-exclusivo/tropico-panameno-abundan-frutas-no_1_2187942.html" target="_blank">
+                    <button>Ver más</button>
+                </a>
+            </div>
+        </section>
+
+        <!--Sección para la tercera noticia-->
+        <section class="noticia">
+            <div class="infoDerecha">
+                <!--Título de la noticia-->
+                <h2>Efecto del ayuno intermitente en tu cabello</h2>
+                <!--Imagen de la noticia-->
+                <img src="Imagenes/noticia3.jpeg" alt="Efecto del ayuno en el cabello">
+                <!--Resumen de la noticia-->
+                <p>Un estudio realizado en roedores por investigadores de la Universidad de Westlake (China) sugiere que el ayuno intermitente, aunque tiene beneficios metabólicos y ayuda a perder grasa, podría tener un efecto secundario inesperado: ralentizar el crecimiento del cabello. Durante los periodos de ayuno, se liberan ácidos grasos que las células madre del folículo capilar no pueden procesar correctamente, lo que provoca estrés oxidativo y dificulta la regeneración del pelo.</p>
+                <p>Los investigadores también descubrieron que este efecto negativo se reducía al administrar antioxidantes como la vitamina E, lo que sugiere una posible forma de mitigar el daño. Aunque los hallazgos son prometedores, el estudio aún no se ha probado en humanos, por lo que se recomienda precaución y consultar con un especialista antes de adoptar dietas de ayuno intermitente de forma prolongada.</p>
+                <!--Botón de "Ver más" con enlace a la noticia original-->
+                <a href="https://www.tvn-2.com/entretenimiento/ayuno-intermitente-efecto-secundario-crecimiento-cabello_1_2170225.html" target="_blank">
+                    <button>Ver más</button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <!--Pie de página-->
     <footer>
-        
+        <!--Lista con enlaces adicionales-->
+        <ul>
+            <li><a href=""><b>Preguntas frecuentes</b></a></li>
+            <li><a href=""><b>privacidad</b></a></li>
+            <li><a href=""><b>Conoce más de nosotros</b></a></li>
+            <!--Dropdown con selector de idioma-->
+            <li>
+                <label for="opciones">Idioma</label>
+                <select id="opciones">
+                    <option value="Esp" selected>Español</option>
+                    <option value="Ing">Inglés</option>
+                </select>
+            </li>
+        </ul>
+        <p>Por Jesús Alveo, Jessica Zheng, Erick Hou, Roniel Quintero</p>
+        <p> 2025</p>
     </footer>
 
 </body>
