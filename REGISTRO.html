@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Regístrate</title>
+    <!-- Vincula el archivo CSS que contiene los estilos -->
+    <link rel="stylesheet" href="estilos/registro.css">
 </head>
 <body>
-    
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Salud Vital</h1>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <nav>
+        <ul>
+            <!-- Enlaces a las otras páginas -->
+            <li><b><a href="HOME.html">Home</a></b></li>
+            <li><b><a href="REGISTRO.html">Registro</a></b></li>
+            <li><b><a href="BLOG.html">Blog</a></b></li>
+            <li><b><a href="CONTACTO.html">Contacto</a></b></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal que contiene el formulario de registro -->
+    <section>
+        <h2>Formulario de Registro</h2>
+        <form>
+            <!-- Campo de texto para nombre completo -->
+            <label>Nombre completo:</label><br>
+            <input type="text" placeholder="Ingrese su nombre"><br><br>
+
+            <!-- Campo de fecha para nacimiento -->
+            <label>Fecha de nacimiento:</label><br>
+            <input type="date"><br><br>
+
+            <!-- Campo para correo electrónico -->
+            <label>Correo electrónico:</label><br>
+            <input type="email" placeholder="ejemplo@correo.com"><br><br>
+
+            <!-- Campo de teléfono con patrón de validación -->
+            <label>Número telefónico:</label><br>
+            <input type="text" pattern="[0-9]{4}-[0-9]{4}" placeholder="0000-0000"><br><br>
+
+            <!-- Selección de género usando radio buttons -->
+            <label>Género:</label><br>
+            <!-- Cada radio comparte el mismo nombre para que sea selección única -->
+            <label class="radio-label"><input type="radio" name="genero"> Masculino</label>
+            <label class="radio-label"><input type="radio" name="genero"> Femenino</label>
+            <label class="radio-label"><input type="radio" name="genero"> Otro</label><br><br>
+
+            <!-- Campo de texto para dirección -->
+            <label>Dirección:</label><br>
+            <input type="text" placeholder="Ingrese su dirección"><br><br>
+
+            <!-- Campo numérico para peso -->
+            <label>Peso (kg):</label><br>
+            <input type="number" placeholder="Ej: 70"><br><br>
+
+            <!-- Campo numérico para altura -->
+            <label>Altura (cm):</label><br>
+            <input type="number" placeholder="Ej: 170"><br><br>
+
+            <!-- Selección de nivel de actividad física usando dropdown -->
+            <label>Nivel de actividad física:</label><br>
+            <select>
+                <option>Sedentario</option>
+                <option>Ligero</option>
+                <option>Moderado</option>
+                <option>Intenso</option>
+            </select><br><br>
+
+            <!-- Objetivos nutricionales usando checkbox -->
+            <label>Objetivo nutricional:</label><br>
+            <input type="checkbox"> Perder peso
+            <input type="checkbox"> Ganar masa muscular
+            <input type="checkbox"> Mejorar la salud<br><br>
+
+            <!-- Área de texto para alergias o restricciones alimentarias -->
+            <label>Alergias o restricciones alimentarias:</label><br>
+            <textarea placeholder="Indique alergias o restricciones"></textarea><br><br>
+
+            <!-- Selección de cantidad diaria de agua mediante rango -->
+            <label>Cantidad diaria de agua (litros):</label><br>
+            <input type="range" min="0" max="5" step="0.5" id="aguaRange">
+            <output id="aguaOutput">0</output> litros<br><br>
+
+            <!-- Subir foto de alimentos comunes -->
+            <label>Foto de alimentos comunes:</label><br>
+            <input type="file" accept="image/*"><br><br>
+
+            <!-- Hora habitual de la comida principal -->
+            <label>Hora habitual de la comida principal:</label><br>
+            <input type="time"><br><br>
+
+            <!-- Botón de envío del formulario -->
+            <input type="submit" value="Registrar">
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer style="text-align: center;">
+        <!-- Lista de enlaces del footer y selector de idioma -->
+        <ul>
+            <li><a href="" style="color:white;"><b>Preguntas frecuentes</b></a></li>
+            <li><a href="" style="color:white;"><b>Privacidad</b></a></li>
+            <li><a href="" style="color:white;"><b>Conoce más de nosotros</b></a></li>
+            <li>
+                <!-- Label y dropdown para selección de idioma -->
+                <label for="opciones">Idioma</label>
+                <select id="opciones">
+                    <option value="Esp" selected>Español</option>
+                    <option value="Ing">Inglés</option>
+                </select>
+            </li>
+        </ul>
+        <!-- Información del equipo -->
+        <h4>Por Jesús Alveo, Jessica Zheng, Erick Hou, Roniel Quintero</h4>
+        <h4>2025</h4>
+    </footer>
 </body>
 </html>
